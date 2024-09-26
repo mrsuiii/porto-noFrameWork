@@ -11,7 +11,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1300px;
+    max-width: 1350px;
     margin: 0 auto;
 }
 
@@ -120,7 +120,7 @@ ul.nodot li {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .wrt {
-    display: flex;
+    
     align-items: center;
     background-color: #fff;
     padding: 15px;
@@ -129,6 +129,7 @@ ul.nodot li {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-right: 1px;
 }
 .wrt:hover {
     transform: translateY(-5px);
