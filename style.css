@@ -1,0 +1,226 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #f7f7f7 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed; /* Keeps the gradient fixed as the page scrolls */
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h1, h2, .ctitle {
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header and Profile Section */
+#dhead {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+#dpic {
+    margin-right: 20px;
+}
+.desc h3 {
+    color: #555;
+}
+.ppic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#ddesc {
+    flex: 1;
+}
+
+#ddesc h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#ddesc h2 {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#dico a {
+    margin-right: 10px;
+}
+
+.iico {
+    width: 30px;
+    height: 30px;
+}
+
+/* Featured Writing Section */
+.ctitle {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+ul.nodot {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul.nodot li {
+    margin-bottom: 10px;
+}
+
+/* Project Section */
+.project {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Effect on hover */
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.wrt {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.wrt:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Image in project */
+.pico img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect on image - scale and grayscale */
+.pico img:hover {
+    transform: scale(1.1);
+    filter: grayscale(50%);
+}
+
+/* Interactive effect on link hover */
+.pdesc a {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.pdesc a:hover {
+    color: #0056b3;
+}
+
+/* Honor and Rewards Section */
+#featured-honor .project {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#featured-honor .project:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Honor images hover effect */
+#featured-honor .pico img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#featured-honor .pico img:hover {
+    transform: scale(1.05);
+    filter: sepia(40%);
+}
+
+/* Footer/Other Sections */
+#featured-project {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+#featured-honor {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+#featured-writing{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .ppic {
+        width: 100px;
+        height: 100px;
+    }
+
+    #ddesc h1 {
+        font-size: 2em;
+    }
+
+    #ddesc h2 {
+        font-size: 1.2em;
+    }
+}
