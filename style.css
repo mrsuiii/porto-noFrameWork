@@ -1,11 +1,11 @@
-/* General styles */
+
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 50%, #f7f7f7 100%);
     color: #333;
     margin: 0;
     padding: 0;
-    background-attachment: fixed; /* Keeps the gradient fixed as the page scrolls */
+    background-attachment: fixed; 
 }
 
 
@@ -36,7 +36,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Header and Profile Section */
+
 #dhead {
     background-color: #ffffff;
     padding: 20px;
@@ -84,7 +84,6 @@ a:hover {
     height: 30px;
 }
 
-/* Featured Writing Section */
 .ctitle {
     font-size: 1.8em;
     font-weight: bold;
@@ -101,7 +100,6 @@ ul.nodot li {
     margin-bottom: 10px;
 }
 
-/* Project Section */
 .project {
     display: flex;
     align-items: center;
@@ -114,7 +112,6 @@ ul.nodot li {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Effect on hover */
 .project:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -135,7 +132,6 @@ ul.nodot li {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-/* Image in project */
 .pico img {
     width: 80px;
     height: 80px;
@@ -144,13 +140,11 @@ ul.nodot li {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Hover effect on image - scale and grayscale */
 .pico img:hover {
     transform: scale(1.1);
     filter: grayscale(50%);
 }
 
-/* Interactive effect on link hover */
 .pdesc a {
     font-weight: bold;
     font-size: 1.2em;
@@ -158,12 +152,10 @@ ul.nodot li {
     transition: color 0.3s ease;
 }
 
-/* Hover effect for links */
 .pdesc a:hover {
     color: #0056b3;
 }
 
-/* Honor and Rewards Section */
 #featured-honor .project {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -173,7 +165,6 @@ ul.nodot li {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Honor images hover effect */
 #featured-honor .pico img {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -183,7 +174,6 @@ ul.nodot li {
     filter: sepia(40%);
 }
 
-/* Footer/Other Sections */
 #featured-project {
     background-color: #ffffff;
     padding: 20px;
@@ -206,7 +196,7 @@ ul.nodot li {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
 }
-/* Responsive Design */
+
 @media screen and (max-width: 768px) {
     .row {
         flex-direction: column;
